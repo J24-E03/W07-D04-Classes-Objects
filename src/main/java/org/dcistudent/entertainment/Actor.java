@@ -38,14 +38,29 @@ public class Actor {
         return this.nationality;
     }
 
-    public boolean getHasWonOscar() {
+    /**
+     * Gets whether the actor has won an Oscar.
+     *
+     * @return whether the actor has won an Oscar
+     */
+    public boolean hasWonOscar() {
         return hasWonOscar;
     }
 
+    /**
+     * Gets the debut year of the actor.
+     *
+     * @return the debut year of the actor
+     */
     public int getDebutYear() {
         return debutYear;
     }
 
+    /**
+     * Gets the movies the actor has been in.
+     *
+     * @return the movies the actor has been in
+     */
     public Actor setName(String name) {
         if (name.isBlank()) {
             System.out.println("Actor name cannot be empty.");
@@ -58,6 +73,12 @@ public class Actor {
         return this;
     }
 
+    /**
+     * Sets the age of the actor.
+     *
+     * @param age the age of the actor
+     * @return the age of the actor
+     */
     public Actor setAge(int age) {
         if (age < 0 || age > 130) {
             System.out.println("Actor age must be between 0 and 130.");
@@ -70,6 +91,12 @@ public class Actor {
         return this;
     }
 
+    /**
+     * Sets the nationality of the actor.
+     *
+     * @param nationality the nationality of the actor
+     * @return the Actor object
+     */
     public Actor setNationality(String nationality) {
         if (nationality.isBlank()) {
             System.out.println("Actor nationality cannot be empty.");
@@ -86,7 +113,7 @@ public class Actor {
      * Sets whether the actor has won an Oscar.
      *
      * @param hasWonOscar whether the actor has won an Oscar
-     * @return whether the actor has won an Oscar
+     * @return the Actor object
      */
     public Actor setHasWonOscar(boolean hasWonOscar) {
         this.hasWonOscar = hasWonOscar;
@@ -98,7 +125,7 @@ public class Actor {
      * Sets the debut year of the actor.
      *
      * @param debutYear the debut year of the actor
-     * @return the debut year of the actor
+     * @return the Actor object
      */
     public Actor setDebutYear(int debutYear) {
         int birthYear = LocalDateTime.now().getYear() + 1900 - this.age;
@@ -140,11 +167,11 @@ public class Actor {
     @Override
     public String toString() {
         return
-            "Name: " + this.name +
-            "\nAge: " + this.age +
-            "\nNational: " + this.nationality +
-            "\nHas won Oscar: " + this.hasWonOscar +
-            "\nDebut year: " + this.debutYear +
+            "Name: " + this.getName() +
+            "\nAge: " + this.getAge() +
+            "\nNational: " + this.getNationality() +
+            "\nHas won Oscar: " + this.hasWonOscar() +
+            "\nDebut year: " + this.getDebutYear() +
             "\nMovies: " + this.movies.size()
         ;
     }

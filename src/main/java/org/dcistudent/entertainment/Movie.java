@@ -96,6 +96,12 @@ public class Movie {
      * @return the title of the movie
      */
     public Movie setTitle(String title) {
+        if (title.isBlank()) {
+            System.out.println("Title cannot be blank.");
+
+            return this;
+        }
+
         this.title = title;
 
         return this;
@@ -145,6 +151,12 @@ public class Movie {
      * @return the plot of the movie
      */
     public Movie setPlot(String plot) {
+        if (plot.isBlank()) {
+            System.out.println("Plot cannot be blank.");
+
+            return this;
+        }
+
         this.plot = plot;
 
         return this;
@@ -157,6 +169,12 @@ public class Movie {
      * @return the director of the movie
      */
     public Movie setDirector(String director) {
+        if (director.isBlank()) {
+            System.out.println("Director cannot be blank.");
+
+            return this;
+        }
+
         this.director = director;
 
         return this;

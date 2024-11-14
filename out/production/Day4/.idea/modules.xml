@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/W07-D03-OOP-Basics/labs/01-Java-oop_concepts-class_vs_instance/01-Java-oop_concepts-class_vs_instance.iml" filepath="$PROJECT_DIR$/W07-D03-OOP-Basics/labs/01-Java-oop_concepts-class_vs_instance/01-Java-oop_concepts-class_vs_instance.iml" />
+      <module fileurl="file://$PROJECT_DIR$/W07-D03-OOP-Basics/labs/02-Java-oop_concepts-rectangle/02-Java-oop_concepts-rectangle.iml" filepath="$PROJECT_DIR$/W07-D03-OOP-Basics/labs/02-Java-oop_concepts-rectangle/02-Java-oop_concepts-rectangle.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Day4.iml" filepath="$PROJECT_DIR$/.idea/Day4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/OOP/OOP.iml" filepath="$PROJECT_DIR$/OOP/OOP.iml" />
+    </modules>
+  </component>
+</project>
